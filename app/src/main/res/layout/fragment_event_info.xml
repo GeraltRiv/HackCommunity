@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:nestedScrollingEnabled="false"
+    android:background="#9c989898">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/backButton"
+                android:background="@android:color/transparent"
+                android:src="@drawable/back_36" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.3">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:background="@android:color/transparent"
+                android:src="@drawable/first" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOU Hackathon Revolution 21-22.02.2015"
+                    android:id="@+id/textView12"
+                    android:layout_gravity="center"
+                    android:textColor="#ff5c96d0"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.5">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="           DOU Хакатон доволі відомий в межах України. Його мета - познайомитись з тими, хто &quot;get things done&quot;, гарно провести час і вивчити щось нове, а можливо створити й корисний проект.\n      Дух DOU Hackathon живий і ми, волонтери, продовжуємо цю справу. Підписуйтесь і дізнавайтесь про дату і місце проведення.  Приєднуйтесь і приводьте друзів!\n   DOU Хакатон пройде в м.Києві - в офісі компанії Digital Future (вул. Донська, 4а)."
+                    android:id="@+id/textView2"
+                    android:textSize="20dp" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Підписатися"
+        android:id="@+id/button_sign_up"
+        android:layout_weight="0"
+        android:background="#ff62aaa6"
+        android:textSize="25sp" />
+</LinearLayout>

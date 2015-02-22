@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/backButton"
+            android:src="@drawable/back_36"
+            android:background="@android:color/transparent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.2">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pagerHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.view.PagerTabStrip
+                android:id="@+id/pagerTabStrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top">
+            </android.support.v4.view.PagerTabStrip>
+        </android.support.v4.view.ViewPager>
+    </FrameLayout>
+
+</LinearLayout>
